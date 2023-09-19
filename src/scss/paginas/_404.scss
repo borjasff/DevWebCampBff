@@ -1,0 +1,21 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.pagina_404{
+
+    &__contenedor{
+        @include m.contenedor-sm;
+        @include m.grid(1, 3rem);
+        text-align: center;
+    }
+    &__enlace{
+        width: min(100% - 5rem, 65rem );
+        margin: 0 auto;
+        padding: 3rem;
+        position: relative;
+        
+        @include m.boton(v.$azul, v.$blanco);
+        width: auto;
+
+    }
+}

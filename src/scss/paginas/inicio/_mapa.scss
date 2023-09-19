@@ -1,0 +1,17 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+.mapa{
+    height: 45rem;
+    margin-top: 5rem;
+    border: 2rem solid v.$azul;
+
+    &__heading{
+        font-size: 2.8rem;
+        margin: 0;
+        text-align: center;
+    }
+    &__texto{
+        font-size: 1.5rem;
+        margin: 0;
+    }
+}
